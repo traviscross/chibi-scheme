@@ -1,0 +1,28 @@
+Source: chibi-scheme
+Priority: optional
+Maintainer: Travis Cross <tc@traviscross.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Section: lisp
+Homepage: http://code.google.com/p/chibi-scheme/
+#Vcs-Git: git://git.debian.org/collab-maint/chibi-scheme.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/chibi-scheme.git;a=summary
+
+Package: chibi-scheme
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Small Footprint Scheme
+ Chibi-Scheme is a very small library intended for use as an extension
+ and scripting language in C programs. In addition to support for
+ lightweight VM-based threads, each VM itself runs in an isolated heap
+ allowing multiple VMs to run simultaneously in different OS
+ threads. The default language is R7RS Scheme, including first-class
+ continuations and low-and-high-level hygienic macros.
+
+Package: chibi-scheme-dev
+Architecture: any
+Depends: chibi-scheme (= ${binary:Version})
+Description: Development files for Chibi Scheme
+ This package contains files needed for development using Chibi
+ Scheme.
+
