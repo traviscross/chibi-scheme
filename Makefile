@@ -194,6 +194,9 @@ test-sort: chibi-scheme$(EXE) lib/srfi/33/bit$(SO)
 test-srfi-1: chibi-scheme$(EXE)
 	$(CHIBI) -xscheme tests/srfi-1-tests.scm
 
+test-srfi-62: chibi-scheme$(EXE)
+	$(CHIBI) -xscheme tests/srfi-62-tests.scm
+
 test-records: chibi-scheme$(EXE)
 	$(CHIBI) -xscheme tests/record-tests.scm
 
