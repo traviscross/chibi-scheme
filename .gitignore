@@ -1,4 +1,5 @@
 *.o
+*.pc
 *.so
 
 /chibi-scheme
