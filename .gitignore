@@ -12,10 +12,3 @@
 /lib/chibi/stty.c
 /lib/chibi/system.c
 /lib/chibi/time.c
-
-/debian/chibi-scheme
-/debian/chibi-scheme-dev
-/debian/tmp
-/debian/*.log
-/debian/*.substvars
-/debian/files
