@@ -2,6 +2,11 @@
 # -*- makefile -*-
 #export DH_VERBOSE=1
 export CC?=gcc
+export CXX?=g++
+export CPPFLAGS+=-D_FORTIFY_SOURCE=2
+export CFLAGS+=-g3 -O2 -fPIC -fstack-protector --param=ssp-buffer-size=4
+export CXXFLAGS+=$(CFLAGS)
+export LDFLAGS+=-Wl,-z,relro
 
 %:
 	dh $@
