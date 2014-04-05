@@ -21,7 +21,7 @@ Description: Small Footprint Scheme
 
 Package: chibi-scheme-dev
 Architecture: any
-Depends: chibi-scheme (= ${binary:Version})
+Depends: ${misc:Depends}, chibi-scheme (= ${binary:Version})
 Description: Development files for Chibi Scheme
  This package contains files needed for development using Chibi
  Scheme.
