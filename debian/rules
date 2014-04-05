@@ -12,6 +12,7 @@ export LDFLAGS+=-Wl,-z,relro
 	dh $@
 
 export VERSION := $(shell dpkg-parsechangelog | awk '/^Version:/{print $$2};')
+export SOVERSION := $(shell echo $(VERSION) | sed "s/[~+_-]/./" | sed "s/[~+_-].*//")
 export DESTDIR := debian/tmp
 export PREFIX := /usr
 
