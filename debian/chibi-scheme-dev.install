@@ -1,5 +1,6 @@
 usr/bin/chibi-doc
 usr/bin/chibi-ffi
 usr/include/*
+usr/lib/pkgconfig/*
 usr/share/man/man1/chibi-doc.1
 usr/share/man/man1/chibi-ffi.1

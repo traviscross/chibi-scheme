@@ -6,6 +6,7 @@ export CC?=gcc
 %:
 	dh $@
 
+export VERSION := $(shell dpkg-parsechangelog | awk '/^Version:/{print $$2};')
 export DESTDIR := debian/tmp
 export PREFIX := /usr
 
