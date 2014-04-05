@@ -1,6 +1,7 @@
 *.o
 *.pc
 *.so
+*.so.*
 
 /chibi-scheme
 /chibi-scheme-static
