@@ -1,12 +1,16 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 #export DH_VERBOSE=1
+export CC?=gcc
 
 %:
 	dh $@
 
+export DESTDIR := debian/tmp
+export PREFIX := /usr
+
 override_dh_auto_build:
-	$(MAKE) PREFIX=/usr CC=gcc
+	$(MAKE) all
 
 override_dh_auto_install:
-	$(MAKE) install DESTDIR=debian/tmp PREFIX=/usr
+	$(MAKE) install
