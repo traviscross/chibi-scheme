@@ -17,7 +17,7 @@ export DESTDIR := debian/tmp
 export PREFIX := /usr
 
 override_dh_auto_build:
-	$(MAKE) all
+	$(MAKE) all libchibi-scheme.a
 
 override_dh_auto_install:
 	$(MAKE) install
