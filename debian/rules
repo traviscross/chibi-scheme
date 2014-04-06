@@ -21,3 +21,7 @@ override_dh_auto_build:
 
 override_dh_auto_install:
 	$(MAKE) install
+	sed \
+	  -i debian/tmp/usr/bin/chibi-doc \
+	  -i debian/tmp/usr/bin/chibi-ffi \
+	  -e 's|#!.*|#!/usr/bin/chibi-scheme|; :l n; bl;'
