@@ -1,3 +1,9 @@
+chibi-scheme (0.6.1+489~g97b81d3-2) unstable; urgency=low
+
+  * Various packaging improvements.
+
+ -- Travis Cross <tc@traviscross.com>  Sun, 06 Apr 2014 16:10:36 +0000
+
 chibi-scheme (0.6.1+489~g97b81d3-1) unstable; urgency=low
 
   * Update to latest upstream.
