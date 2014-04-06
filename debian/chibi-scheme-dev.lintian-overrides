@@ -1,0 +1,4 @@
+# There is no upstream changelog
+chibi-scheme-dev: no-upstream-changelog
+# The chibi-scheme interpreter isn't common yet
+chibi-scheme-dev: unusual-interpreter
